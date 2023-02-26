@@ -91,6 +91,7 @@
       thisProduct.formInputs = thisProduct.form.querySelectorAll(select.all.formInputs);
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
+      thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
     }
 
     initAccordion(){
@@ -151,6 +152,7 @@
         for(let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
+          const optionImage = thisProduct.imageWrapper.querySelector('.' + paramId + '-' + optionId);
 
           // check if there is param with a name of paramId in formData and if it includes optionId
           if(formData[paramId] && formData[paramId].includes(optionId)) {
@@ -159,12 +161,22 @@
               // add option price to price variable
               price += option.price;
             }
+
+            if (optionImage && !optionImage.classList.contains('active')) {
+              optionImage.classList.add('active');
+            }
+
           } else {
             // check if the option is default
             if(option.default) {
               // reduce price variable
               price -= option.price;
             }
+
+            if (optionImage && optionImage.classList.contains('active')) {
+              optionImage.classList.remove('active');
+            }
+
           }
 
         }
