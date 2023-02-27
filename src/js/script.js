@@ -162,8 +162,8 @@
               price += option.price;
             }
 
-            if (optionImage && !optionImage.classList.contains('active')) {
-              optionImage.classList.add('active');
+            if (optionImage && !optionImage.classList.contains(classNames.menuProduct.imageVisible)) {
+              optionImage.classList.add(classNames.menuProduct.imageVisible);
             }
 
           } else {
@@ -173,8 +173,8 @@
               price -= option.price;
             }
 
-            if (optionImage && optionImage.classList.contains('active')) {
-              optionImage.classList.remove('active');
+            if (optionImage && optionImage.classList.contains(classNames.menuProduct.imageVisible)) {
+              optionImage.classList.remove(classNames.menuProduct.imageVisible);
             }
 
           }
