@@ -249,35 +249,11 @@
     {
       "address": "",
       "phone": "",
-      "totalPrice": 83,
-      "subtotalPrice": 63,
-      "totalNumber": 7,
+      "totalPrice": 56,
+      "subtotalPrice": 36,
+      "totalNumber": 4,
       "deliveryFee": 20,
       "products": [
-        {
-          "id": "cake",
-          "amount": 1,
-          "price": 9,
-          "priceSingle": 9,
-          "name": "Zio Stefano's Doughnut",
-          "params": {}
-        },
-        {
-          "id": "cake",
-          "amount": 1,
-          "price": 9,
-          "priceSingle": 9,
-          "name": "Zio Stefano's Doughnut",
-          "params": {}
-        },
-        {
-          "id": "cake",
-          "amount": 1,
-          "price": 9,
-          "priceSingle": 9,
-          "name": "Zio Stefano's Doughnut",
-          "params": {}
-        },
         {
           "id": "cake",
           "amount": 1,
