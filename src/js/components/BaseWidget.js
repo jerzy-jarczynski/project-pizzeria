@@ -27,6 +27,7 @@ class BaseWidget {
     }
 
     thisWidget.renderValue();
+
   }
 
   setValue(value) {
