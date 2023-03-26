@@ -205,6 +205,10 @@
     border-radius: 4px;
 
     &:hover {
+      img {
+        filter: blur(3px) brightness(50%);
+      }
+
       .icons {
         opacity: 1;
       }
@@ -223,6 +227,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all .2s ease;
     }
   }
 
