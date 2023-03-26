@@ -7,8 +7,7 @@ class Home {
 
     thisHome.data = data;
 
-    // thisHome.render(element);
-    thisHome.render2(element);
+    thisHome.render(element);
     thisHome.initWidgets();
   }
 
@@ -19,43 +18,7 @@ class Home {
 
     this.dom.wrapper = wrapper;
 
-    console.log(thisHome.data[0].image);
-    const image = thisHome.data[0].image;
-
-    const generatedHTML = templates.homeWidget(image);
-
-    console.log(generatedHTML);
-
-    thisHome.dom.wrapper.innerHTML = generatedHTML;
-  }
-
-  render2(wrapper) {
-    const thisHome = this;
-
-    thisHome.dom = {};
-
-    // console.log('thisHome.dom', thisHome.dom);
-
-    this.dom.wrapper = wrapper;
-
-    // console.log('this.dom.wrapper', this.dom.wrapper);
-
-    const tplHelloSource = document.querySelector('#template-home-widget').innerHTML;
-
-    // console.log('tplHelloSource', tplHelloSource);
-
-    const tplHello = Handlebars.compile(tplHelloSource);
-
-    // console.log('tplHello', tplHello);
-
-    const dataHello = thisHome.data;
-
-    // console.log('dataHello', dataHello);
-
-    let generatedHTML = tplHello(dataHello);
-
-    // console.log('generatedHTML', generatedHTML);
-
+    let generatedHTML = templates.homeWidget(thisHome.data);
     thisHome.dom.wrapper.innerHTML = generatedHTML;
 
     thisHome.dom.carouselWrapper = thisHome.dom.wrapper.querySelector(select.home.carousel);
@@ -63,8 +26,6 @@ class Home {
 
   initWidgets() {
     const thisHome = this;
-
-    // console.log('I am activated!');
 
     thisHome.carousel = new Carousel(thisHome.dom.carouselWrapper);
   }

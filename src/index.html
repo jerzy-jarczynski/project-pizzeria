@@ -277,54 +277,32 @@
 
       <div class="carousel">
         <div class="main-carousel">
+
+          {{#each quotes}}
+          
           <div class="carousel-cell">
             <div class="row">
               <div class="image-col">
                 <div class="image-wrapper">
-                  <img src="./images/home/pizza-3.jpg" alt="">
+                  {{{ this.image }}}
                 </div>
               </div>
               <div class="titles-col">              
-                <h3 class="title">AMAZING SERVICE!</h3>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
+                <h3 class="title">
+                  {{ this.title }}
+                </h3>
+                <p class="content">
+                  {{ this.content }}
+                </p>
                 <p class="author">
-                  - Margaret Osborne
+                  {{ this.author }}
                 </p>
               </div>
             </div>
           </div>
-          <div class="carousel-cell">
-            <div class="row">
-              <div class="image-col">
-                <div class="image-wrapper">
-                  <img src="./images/home/pizza-3.jpg" alt="">
-                </div>
-              </div>
-              <div class="titles-col">              
-                <h3 class="title">AMAZING SERVICE!</h3>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
-                <p class="author">
-                  - Margaret Osborne
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="row">
-              <div class="image-col">
-                <div class="image-wrapper">
-                  <img src="./images/home/pizza-3.jpg" alt="">
-                </div>
-              </div>
-              <div class="titles-col">              
-                <h3 class="title">AMAZING SERVICE!</h3>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
-                <p class="author">
-                  - Margaret Osborne
-                </p>
-              </div>
-            </div>
-          </div>
+
+          {{/each}}
+
         </div>
       </div>
     </div>

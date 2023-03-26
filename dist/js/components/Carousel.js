@@ -8,9 +8,6 @@ class Carousel {
 
     thisCarousel.dom.wrapper = wrapper;
 
-    // console.log('thisCarousel', thisCarousel);
-    // console.log('thisCarousel.dom.wrapper', thisCarousel.dom.wrapper);
-
     thisCarousel.initPlugin();
   }
 
@@ -18,8 +15,6 @@ class Carousel {
     const thisCarousel = this;
 
     thisCarousel.dom.carousel = thisCarousel.dom.wrapper.querySelector(select.home.carouselPlugin);
-
-    // console.log('thisCarousel.dom.carousel', thisCarousel.dom.carousel);
 
     // eslint-disable-next-line
     const flkty = new Flickity( thisCarousel.dom.carousel, {
