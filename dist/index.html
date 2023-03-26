@@ -20,7 +20,7 @@
           <h1 class="logo__title"><span>Mamma</span>Mia!</h1>
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
-        <div class="main-nav">
+        <div class="main-nav link-wrapper">
           <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
@@ -252,14 +252,20 @@
     <div class="home-widget">
       <div class="row home-row">
 
-        <div class="col-6 home-col {{ order-online.id }}">
-          <h2>ORDER ONLINE</h2>
-          {{{ order-online.image }}}
+        <div class="col-6 home-col {{ order-online.id }} link-wrapper">
+          <a href="#{{ order-online.target }}">
+            <h2>ORDER ONLINE</h2>
+            {{{ order-online.image }}}
+            <p class="show-on-hover">Delicious food delivered to your door</p>
+          </a>
         </div>
 
-        <div class="col-6 home-col {{ book-a-table.id }}">
-          <h2>BOOK A TABLE</h2>
-          {{{ book-a-table.image }}}
+        <div class="col-6 home-col {{ book-a-table.id }} link-wrapper">
+          <a href="#{{ book-a-table.target }}">
+            <h2>BOOK A TABLE</h2>
+            {{{ book-a-table.image }}}
+            <p class="show-on-hover">Visit our place and taste our food</p>
+          </a>
         </div>
 
         <div class="col-12 home-col opening-hours">

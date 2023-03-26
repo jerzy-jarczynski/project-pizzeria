@@ -74,6 +74,9 @@ export const select = {
     edit: '[href="#edit"]',
     remove: '[href="#remove"]',
   },
+  linkWrapper: {
+    links: '.link-wrapper a',
+  },
 };
 
 export const classNames = {

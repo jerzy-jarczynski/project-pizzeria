@@ -259,11 +259,13 @@
   "home": {
     "order-online": {
       "id": "order-online",
-      "image": "<img src=\"images/home/pizza-1.jpg\">"
+      "image": "<img src=\"images/home/pizza-1.jpg\">",
+      "target": "order"
     },
     "book-a-table": {
       "id": "book-a-table",
-      "image": "<img src=\"images/home/pizza-2.jpg\">"      
+      "image": "<img src=\"images/home/pizza-2.jpg\">",
+      "target": "booking"
     }
   }
 }

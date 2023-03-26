@@ -32,27 +32,27 @@ class Home {
 
     thisHome.dom = {};
 
-    console.log('thisHome.dom', thisHome.dom);
+    // console.log('thisHome.dom', thisHome.dom);
 
     this.dom.wrapper = wrapper;
 
-    console.log('this.dom.wrapper', this.dom.wrapper);
+    // console.log('this.dom.wrapper', this.dom.wrapper);
 
     const tplHelloSource = document.querySelector('#template-home-widget').innerHTML;
 
-    console.log('tplHelloSource', tplHelloSource);
+    // console.log('tplHelloSource', tplHelloSource);
 
     const tplHello = Handlebars.compile(tplHelloSource);
 
-    console.log('tplHello', tplHello);
+    // console.log('tplHello', tplHello);
 
     const dataHello = thisHome.data;
 
-    console.log('dataHello', dataHello);
+    // console.log('dataHello', dataHello);
 
     let generatedHTML = tplHello(dataHello);
 
-    console.log('generatedHTML', generatedHTML);
+    // console.log('generatedHTML', generatedHTML);
 
     thisHome.dom.wrapper.innerHTML = generatedHTML;
   }

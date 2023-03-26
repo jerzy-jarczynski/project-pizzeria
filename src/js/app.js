@@ -132,6 +132,24 @@ const app = {
 
     const homeContainer = document.querySelector(select.containerOf.home);
     thisApp.home = new Home(homeContainer, thisApp.homeData);
+
+    thisApp.links = document.querySelectorAll(select.linkWrapper.links);
+
+    for (let link of thisApp.links) {
+      link.addEventListener('click', function(event) {
+        const clickedElement = this;
+        event.preventDefault();
+
+        /* Get page id from href Attribute */
+        const id = clickedElement.getAttribute('href').replace('#', '');
+
+        /* Run thisApp.activatePage with that id */
+        thisApp.activatePage(id);
+
+        /* Change URL hash */
+        window.location.hash = '#/' + id;
+      });
+    }
   },  
 
   init: function(){
