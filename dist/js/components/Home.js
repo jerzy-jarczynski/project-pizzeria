@@ -64,7 +64,7 @@ class Home {
   initWidgets() {
     const thisHome = this;
 
-    console.log('I am activated!');
+    // console.log('I am activated!');
 
     thisHome.carousel = new Carousel(thisHome.dom.carouselWrapper);
   }
