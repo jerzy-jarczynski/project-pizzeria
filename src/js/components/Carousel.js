@@ -24,7 +24,10 @@ class Carousel {
     // eslint-disable-next-line
     const flkty = new Flickity( thisCarousel.dom.carousel, {
       cellAlign: 'left',
-      contain: true
+      contain: true,
+      prevNextButtons: false,
+      wrapAround: true,
+      autoPlay: 3000,
     });
   }
 }
