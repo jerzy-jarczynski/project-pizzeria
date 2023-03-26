@@ -1,4 +1,5 @@
-import { templates } from '../settings.js';
+import { select, templates } from '../settings.js';
+import Carousel from './Carousel.js';
 
 class Home {
   constructor(element, data) {
@@ -8,6 +9,7 @@ class Home {
 
     // thisHome.render(element);
     thisHome.render2(element);
+    thisHome.initWidgets();
   }
 
   render(wrapper) {
@@ -55,6 +57,16 @@ class Home {
     // console.log('generatedHTML', generatedHTML);
 
     thisHome.dom.wrapper.innerHTML = generatedHTML;
+
+    thisHome.dom.carouselWrapper = thisHome.dom.wrapper.querySelector(select.home.carousel);
+  }
+
+  initWidgets() {
+    const thisHome = this;
+
+    console.log('I am activated!');
+
+    thisHome.carousel = new Carousel(thisHome.dom.carouselWrapper);
   }
 }
 

@@ -53,6 +53,10 @@ export const select = {
     phone: 'input[name="phone"]',
     address: 'input[name="address"]',
   },
+  home: {
+    carousel: '.carousel',
+    carouselPlugin: '.main-carousel',
+  },
   nav: {
     links: '.main-nav a',
   },
