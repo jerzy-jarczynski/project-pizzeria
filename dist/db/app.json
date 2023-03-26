@@ -256,7 +256,14 @@
     }
   ],
   "bookings": [],
-  "home": [
-    {}
-  ]
+  "home": {
+    "order-online": {
+      "id": "order-online",
+      "image": "<img src=\"images/home/pizza-1.jpg\">"
+    },
+    "book-a-table": {
+      "id": "book-a-table",
+      "image": "<img src=\"images/home/pizza-2.jpg\">"      
+    }
+  }
 }

@@ -1,5 +1,6 @@
 /* Variables */
 
+$color-darker: #000000;
 $color-dark: #333;
 $color-light: #fff;
 $color-main: #ff6b6b;
@@ -42,11 +43,13 @@ $base-size: 12px;
   }
 
   // CODE ADDED START
-  &.disabled, &[disabled] {
+  &.disabled,
+  &[disabled] {
     background: desaturate($btn-bg, 100%);
     border-color: desaturate($btn-border, 100%);
     cursor: not-allowed;
   }
+
   // CODE ADDED END
 }
 
