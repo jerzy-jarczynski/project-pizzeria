@@ -1,1 +1,3 @@
-[I'm an inline-style link](https://www.google.com)
+# Project Pizzeria - Vanilla JS
+
+[View running project on Replit](https://project-pizzeria.jerzy-jarczynski.repl.co/)
