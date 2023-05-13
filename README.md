@@ -1,3 +1,3 @@
-# Project CRUD Blog - React JS
+# Project Pizzeria - Vanilla JS
 
-[View running demo on Replit](https://react-crud-blog--jerzy-jarczynski.repl.co/)
+[View running project on Replit](https://project-pizzeria.jerzy-jarczynski.repl.co/)
